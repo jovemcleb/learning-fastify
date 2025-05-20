@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "learning-fastify",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

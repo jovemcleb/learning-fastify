@@ -1,0 +1,25 @@
+meta {
+  name: users
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/users/432
+  body: json
+  auth: inherit
+}
+
+headers {
+  user: 123asda
+}
+
+body:json {
+  {
+    "name":"clebs"
+  }
+}
+
+body:xml {
+  <name>Jstack</name>
+}
