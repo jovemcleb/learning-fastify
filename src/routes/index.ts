@@ -15,7 +15,6 @@ export const routes: FastifyPluginAsync = async (fastify) => {
   fastify.setGenReqId(() => randomUUID());
 
   //decorateRequest é usado para adicionar propriedades ao objeto de requisição
-  fastify.decorateRequest("user", null);
   fastify.decorateReply("hbs", function (template, variables) {
     this.send({ template, variables });
   });
